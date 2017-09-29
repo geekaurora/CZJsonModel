@@ -7,16 +7,9 @@
 //
 
 import UIKit
+import CZUtils
 
 public typealias MappingBlock = (CZObjectMapping) -> Void
-
-public extension Dictionary {
-    mutating func append(_ dict: Dictionary) {
-        for (key, value) in dict {
-            self[key] = value
-        }
-    }
-}
 
 open class CZObjectMapping: NSObject {
     open var objectClass: Swift.AnyClass?
@@ -36,13 +29,13 @@ open class CZObjectMapping: NSObject {
 
     // MARK: - Properties
     open func mapProperties(fromMappingObject mappingObj: CZObjectMapping) {
-        propertyMappings.append(mappingObj.propertyMappings)
+        propertyMappings.insert(mappingObj.propertyMappings)
         hasOneMappings.append(contentsOf: mappingObj.hasOneMappings)
         hasManyMappings.append(contentsOf: mappingObj.hasManyMappings)
     }
 
     open func mapProperties(from propertyDictionary: [String : String]) {
-        propertyMappings.append(propertyDictionary)
+        propertyMappings.insert(propertyDictionary)
     }
 
     // MARK: - Relationships

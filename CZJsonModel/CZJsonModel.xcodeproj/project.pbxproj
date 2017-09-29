@@ -25,6 +25,27 @@
 			remoteGlobalIDString = 2AC429D21F7E3269005D553B;
 			remoteInfo = CZJsonModel;
 		};
+		2AC42A2A1F7E355E005D553B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AC42A251F7E355E005D553B /* CZUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C39982CA1F7739EA00775B6C;
+			remoteInfo = CZUtils;
+		};
+		2AC42A2C1F7E355E005D553B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AC42A251F7E355E005D553B /* CZUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C39982D31F7739EA00775B6C;
+			remoteInfo = CZUtilsTests;
+		};
+		2AC42A2E1F7E3565005D553B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AC42A251F7E355E005D553B /* CZUtils.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C39982C91F7739EA00775B6C;
+			remoteInfo = CZUtils;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +60,7 @@
 		2AC429F01F7E32C4005D553B /* CZObjectMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CZObjectMapping.swift; path = Core/CZObjectMapping.swift; sourceTree = "<group>"; };
 		2AC429F11F7E32C4005D553B /* CZRelationshipMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CZRelationshipMapping.swift; path = Core/CZRelationshipMapping.swift; sourceTree = "<group>"; };
 		2AC429F21F7E32C4005D553B /* CZSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CZSerializer.swift; path = Core/CZSerializer.swift; sourceTree = "<group>"; };
+		2AC42A251F7E355E005D553B /* CZUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CZUtils.xcodeproj; path = /__Github/CZNetworking/../CZUtils/CZUtils.xcodeproj; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +88,7 @@
 				2AC429D51F7E3269005D553B /* CZJsonModel */,
 				2AC429E01F7E3269005D553B /* CZJsonModelTests */,
 				2AC429D41F7E3269005D553B /* Products */,
+				2AC42A251F7E355E005D553B /* CZUtils.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +132,15 @@
 			name = "Supported Files";
 			sourceTree = "<group>";
 		};
+		2AC42A261F7E355E005D553B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AC42A2B1F7E355E005D553B /* CZUtils.framework */,
+				2AC42A2D1F7E355E005D553B /* CZUtilsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -135,6 +167,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				2AC42A2F1F7E3565005D553B /* PBXTargetDependency */,
 			);
 			name = CZJsonModel;
 			productName = CZJsonModel;
@@ -192,6 +225,12 @@
 			mainGroup = 2AC429C91F7E3269005D553B;
 			productRefGroup = 2AC429D41F7E3269005D553B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2AC42A261F7E355E005D553B /* Products */;
+					ProjectRef = 2AC42A251F7E355E005D553B /* CZUtils.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2AC429D21F7E3269005D553B /* CZJsonModel */,
@@ -199,6 +238,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2AC42A2B1F7E355E005D553B /* CZUtils.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CZUtils.framework;
+			remoteRef = 2AC42A2A1F7E355E005D553B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2AC42A2D1F7E355E005D553B /* CZUtilsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CZUtilsTests.xctest;
+			remoteRef = 2AC42A2C1F7E355E005D553B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2AC429D11F7E3269005D553B /* Resources */ = {
@@ -246,6 +302,11 @@
 			target = 2AC429D21F7E3269005D553B /* CZJsonModel */;
 			targetProxy = 2AC429DE1F7E3269005D553B /* PBXContainerItemProxy */;
 		};
+		2AC42A2F1F7E3565005D553B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CZUtils;
+			targetProxy = 2AC42A2E1F7E3565005D553B /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -291,7 +352,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -339,7 +400,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -436,6 +497,7 @@
 				2AC429E91F7E3269005D553B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2AC429EA1F7E3269005D553B /* Build configuration list for PBXNativeTarget "CZJsonModelTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +506,7 @@
 				2AC429EC1F7E3269005D553B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
