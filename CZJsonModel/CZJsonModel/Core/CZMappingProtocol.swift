@@ -8,6 +8,6 @@
 
 import UIKit
 
-protocol CZMappingProtocol: NSObjectProtocol {
+public protocol CZMappingProtocol: NSObjectProtocol {
     static func objectMapping() -> CZObjectMapping
 }

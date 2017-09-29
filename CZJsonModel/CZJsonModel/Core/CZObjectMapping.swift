@@ -8,9 +8,9 @@
 
 import UIKit
 
-typealias MappingBlock = (CZObjectMapping) -> Void
+public typealias MappingBlock = (CZObjectMapping) -> Void
 
-extension Dictionary {
+public extension Dictionary {
     mutating func append(_ dict: Dictionary) {
         for (key, value) in dict {
             self[key] = value
@@ -18,9 +18,9 @@ extension Dictionary {
     }
 }
 
-class CZObjectMapping: NSObject {
-    var objectClass: Swift.AnyClass?
-    var mappingBlock: MappingBlock?
+open class CZObjectMapping: NSObject {
+    open var objectClass: Swift.AnyClass?
+    open var mappingBlock: MappingBlock?
     /// Dictionary, containing property mappings for current object. i.e. ["keyPath": "property"]
     open var propertyMappings: [String: String] = [:]
     /// Array, containing to-one relationships of current object.

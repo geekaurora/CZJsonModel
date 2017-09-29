@@ -8,9 +8,9 @@
 
 import UIKit
 
-class CZSerializer: NSObject {
+open class CZSerializer: NSObject {
     /// Serialize object to dictionary
-    class func serializeObject(_ object: CZMappingProtocol, with mapping: CZObjectMapping) -> [AnyHashable : Any] {
+    open class func serializeObject(_ object: CZMappingProtocol, with mapping: CZObjectMapping) -> [AnyHashable : Any] {
         var res = [AnyHashable : Any]()
 
         // Non-class properties

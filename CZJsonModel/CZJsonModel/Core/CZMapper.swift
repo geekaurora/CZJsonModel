@@ -8,13 +8,13 @@
 
 import UIKit
 
-class CZMapper: NSObject {
-    class func object(fromExternalRepresentation externalRepresentation: [AnyHashable : Any], with mapping: CZObjectMapping) -> Any? {
+open class CZMapper: NSObject {
+    public class func object(fromExternalRepresentation externalRepresentation: [AnyHashable : Any], with mapping: CZObjectMapping) -> Any? {
         return nil
     }
 
     @discardableResult
-    class func fillObject(_ object: CZMappingProtocol, fromExternalRepresentation externalRepresentation: [AnyHashable : Any], with mapping: CZObjectMapping) -> Any {
+    public class func fillObject(_ object: CZMappingProtocol, fromExternalRepresentation externalRepresentation: [AnyHashable : Any], with mapping: CZObjectMapping) -> Any {
         // Non-class properties
         for (jsonKey, keyPath) in mapping.propertyMappings {
             (object as! NSObject).setValue(externalRepresentation.value(dotedKey: jsonKey), forKey: keyPath)

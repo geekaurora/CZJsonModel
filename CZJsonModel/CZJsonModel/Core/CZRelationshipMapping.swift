@@ -9,10 +9,10 @@
 import UIKit
 
 /// Mapping for Class object
-struct CZRelationshipMapping {
+public struct CZRelationshipMapping {
     /// keyPath in JSON object
-    var keyPath: String
+    public var keyPath: String
     /// propertyName of Class
-    var property: String
-    var objectClass: CZMappingProtocol.Type
+    public var property: String
+    public var objectClass: CZMappingProtocol.Type
 }
