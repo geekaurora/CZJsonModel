@@ -18,6 +18,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2A0FFC011F96840100B16E70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A0FFBFC1F96840100B16E70 /* CZUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C39982CA1F7739EA00775B6C;
+			remoteInfo = CZUtils;
+		};
+		2A0FFC031F96840100B16E70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A0FFBFC1F96840100B16E70 /* CZUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C39982D31F7739EA00775B6C;
+			remoteInfo = CZUtilsTests;
+		};
+		2A0FFC051F96840700B16E70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A0FFBFC1F96840100B16E70 /* CZUtils.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C39982C91F7739EA00775B6C;
+			remoteInfo = CZUtils;
+		};
 		2AC429DE1F7E3269005D553B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2AC429CA1F7E3269005D553B /* Project object */;
@@ -25,30 +46,10 @@
 			remoteGlobalIDString = 2AC429D21F7E3269005D553B;
 			remoteInfo = CZJsonModel;
 		};
-		2AC42A2A1F7E355E005D553B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2AC42A251F7E355E005D553B /* CZUtils.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C39982CA1F7739EA00775B6C;
-			remoteInfo = CZUtils;
-		};
-		2AC42A2C1F7E355E005D553B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2AC42A251F7E355E005D553B /* CZUtils.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C39982D31F7739EA00775B6C;
-			remoteInfo = CZUtilsTests;
-		};
-		2AC42A2E1F7E3565005D553B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2AC42A251F7E355E005D553B /* CZUtils.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = C39982C91F7739EA00775B6C;
-			remoteInfo = CZUtils;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A0FFBFC1F96840100B16E70 /* CZUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CZUtils.xcodeproj; path = CZJsonModel/Core/CZUtils/CZUtils.xcodeproj; sourceTree = "<group>"; };
 		2AC429D31F7E3269005D553B /* CZJsonModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CZJsonModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AC429D61F7E3269005D553B /* CZJsonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CZJsonModel.h; sourceTree = "<group>"; };
 		2AC429D71F7E3269005D553B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,7 +61,6 @@
 		2AC429F01F7E32C4005D553B /* CZObjectMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CZObjectMapping.swift; path = Core/CZObjectMapping.swift; sourceTree = "<group>"; };
 		2AC429F11F7E32C4005D553B /* CZRelationshipMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CZRelationshipMapping.swift; path = Core/CZRelationshipMapping.swift; sourceTree = "<group>"; };
 		2AC429F21F7E32C4005D553B /* CZSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CZSerializer.swift; path = Core/CZSerializer.swift; sourceTree = "<group>"; };
-		2AC42A251F7E355E005D553B /* CZUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CZUtils.xcodeproj; path = /__Github/CZNetworking/../CZUtils/CZUtils.xcodeproj; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,13 +82,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A0FFBFD1F96840100B16E70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A0FFC021F96840100B16E70 /* CZUtils.framework */,
+				2A0FFC041F96840100B16E70 /* CZUtilsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		2AC429C91F7E3269005D553B = {
 			isa = PBXGroup;
 			children = (
 				2AC429D51F7E3269005D553B /* CZJsonModel */,
 				2AC429E01F7E3269005D553B /* CZJsonModelTests */,
 				2AC429D41F7E3269005D553B /* Products */,
-				2AC42A251F7E355E005D553B /* CZUtils.xcodeproj */,
+				2A0FFBFC1F96840100B16E70 /* CZUtils.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,15 +141,6 @@
 			name = "Supported Files";
 			sourceTree = "<group>";
 		};
-		2AC42A261F7E355E005D553B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2AC42A2B1F7E355E005D553B /* CZUtils.framework */,
-				2AC42A2D1F7E355E005D553B /* CZUtilsTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -167,7 +167,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				2AC42A2F1F7E3565005D553B /* PBXTargetDependency */,
+				2A0FFC061F96840700B16E70 /* PBXTargetDependency */,
 			);
 			name = CZJsonModel;
 			productName = CZJsonModel;
@@ -227,8 +227,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 2AC42A261F7E355E005D553B /* Products */;
-					ProjectRef = 2AC42A251F7E355E005D553B /* CZUtils.xcodeproj */;
+					ProductGroup = 2A0FFBFD1F96840100B16E70 /* Products */;
+					ProjectRef = 2A0FFBFC1F96840100B16E70 /* CZUtils.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -240,18 +240,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		2AC42A2B1F7E355E005D553B /* CZUtils.framework */ = {
+		2A0FFC021F96840100B16E70 /* CZUtils.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = CZUtils.framework;
-			remoteRef = 2AC42A2A1F7E355E005D553B /* PBXContainerItemProxy */;
+			remoteRef = 2A0FFC011F96840100B16E70 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2AC42A2D1F7E355E005D553B /* CZUtilsTests.xctest */ = {
+		2A0FFC041F96840100B16E70 /* CZUtilsTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = CZUtilsTests.xctest;
-			remoteRef = 2AC42A2C1F7E355E005D553B /* PBXContainerItemProxy */;
+			remoteRef = 2A0FFC031F96840100B16E70 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -297,15 +297,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2A0FFC061F96840700B16E70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CZUtils;
+			targetProxy = 2A0FFC051F96840700B16E70 /* PBXContainerItemProxy */;
+		};
 		2AC429DF1F7E3269005D553B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2AC429D21F7E3269005D553B /* CZJsonModel */;
 			targetProxy = 2AC429DE1F7E3269005D553B /* PBXContainerItemProxy */;
-		};
-		2AC42A2F1F7E3565005D553B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CZUtils;
-			targetProxy = 2AC42A2E1F7E3565005D553B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
